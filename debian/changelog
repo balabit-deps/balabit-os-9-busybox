@@ -1,3 +1,12 @@
+busybox (1:1.30.1-7ubuntu3.1) jammy-security; urgency=medium
+
+  * SECURITY UPDATE: stack overflow in ash
+    - debian/patches/CVE-2022-48174.patch: error out on number followed by
+      another number or variable name in shell/math.c.
+    - CVE-2022-48174
+
+ -- Octavio Galland <octavio.galland@canonical.com>  Tue, 13 Aug 2024 10:39:23 -0300
+
 busybox (1:1.30.1-7ubuntu3) jammy; urgency=medium
 
   * Add dirname from coreutils to the initramfs (LP: #1960083)
